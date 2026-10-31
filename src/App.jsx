@@ -26,7 +26,7 @@ function writeStored(key, value) {
 function initialLang() {
   const saved = readStored('lang')
   if (saved === 'en' || saved === 'ar') return saved
-  return navigator.language?.startsWith('ar') ? 'ar' : 'en'
+  return 'en'
 }
 
 function initialTheme() {
